@@ -7,7 +7,7 @@ onMounted(() => {
 
 <template>
   <main>
-    <h2>header</h2>
-    <p>home page content</p>
+    <h1>Some page</h1>
+    <p>Some page content</p>
   </main>
 </template>

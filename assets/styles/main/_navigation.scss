@@ -1,0 +1,33 @@
+@use 'basic';
+
+nav {
+  @extend .f;
+  @extend .fix;
+  @extend .w100;
+
+  top: 0;
+  left: 0;
+
+  background-color: var(--bg);
+  border-bottom: var(--stroke) var(--text) solid;
+
+  justify-content: flex-end;
+
+  --space: calc(var(--m) / 2);
+  padding-inline: var(--space);
+
+  .btn {
+    padding: 0.6em var(--space);
+
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+}

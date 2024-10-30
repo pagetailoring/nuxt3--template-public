@@ -1,7 +1,7 @@
 {
-  "name": "msn-events-list",
+  "name": "nuxt3--template",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "build": "nuxi build --dotenv .env",
@@ -9,7 +9,7 @@
     "generate": "nuxi generate --dotenv .env",
     "preview": "nuxi preview --dotenv .env",
     "postinstall": "nuxi prepare --dotenv .env",
-    "analyze": "nuxi analyze --dotenv .env.production",
+    "analyze": "nuxi analyze --dotenv .env",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "up": "nuxi upgrade",

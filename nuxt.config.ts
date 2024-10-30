@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ['~/assets/styles/global.scss'],
 
   modules: [
@@ -18,6 +18,13 @@ export default defineNuxtConfig({
   site: {
     url: process.env.DOMAIN,
     trailingSlash: true
+  },
+
+  // https://nuxt.com/docs/api/composables/use-runtime-config
+  runtimeConfig: {
+    public: {
+      TITLE: process.env.TITLE
+    }
   },
 
   app: {

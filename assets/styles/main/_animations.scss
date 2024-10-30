@@ -1,9 +1,16 @@
+.v-enter-active,
+.v-leave-active,
 .page-enter-active,
 .page-leave-active {
-  transition: all var(--time);
+  transition:
+    opacity var(--time) ease,
+    filter var(--time) ease;
 }
+
+.v-enter-from,
+.v-leave-to,
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-  filter: blur(0.5rem);
+  filter: blur(0.1rem);
 }

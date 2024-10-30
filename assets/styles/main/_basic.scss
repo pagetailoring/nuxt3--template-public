@@ -6,12 +6,18 @@
   // padding: 0;
 }
 
+// :root {
+//   // @TODO
+//   interpolate-size: allow-keywords;
+// }
+
 body {
   overflow-x: hidden;
   overflow-y: auto;
 
   background-color: var(--two);
   color: var(--one);
+  margin: 0;
 }
 
 .fix {
@@ -38,10 +44,21 @@ body {
 
 main,
 footer {
-  margin-inline: var(--m);
+  padding-inline: var(--m);
+  margin-inline: auto;
 }
 
-main {
-  display: grid;
-  place-content: center;
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+body,
+#__page,
+#__nuxt {
+  min-height: 100svh;
+}
+
+.w100 {
+  width: 100%;
 }

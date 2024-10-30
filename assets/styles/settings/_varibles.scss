@@ -1,17 +1,16 @@
 :root {
   // default ease/transition time
-  --time: 0.3s;
+  --time: 0.4s;
   // default ease
   --ease: ease-in-out 0.1s;
-}
 
-:root {
+  // for lines & borders
   --stroke: 1px;
 
   // margin
   --m: 1rem;
 
-  @media (min-width: 461px) {
+  @media screen and (min-width: 461px) {
     --m: 2rem;
   }
 }

@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const mail = 'bartek@pagetailoring.com'
+
 onMounted(() => {
   const { triggerLazyLoadingElements } = useAppBasics()
   triggerLazyLoadingElements()
@@ -7,7 +9,9 @@ onMounted(() => {
 
 <template>
   <main>
-    <h2>header</h2>
-    <p>home page content</p>
+    <h1>contact</h1>
+    <p>
+      <NuxtLink class="btn" :to="`mailto:${mail}`">{{ mail }}</NuxtLink>
+    </p>
   </main>
 </template>

@@ -1,16 +1,31 @@
 @use 'settings/colors';
 @use 'settings/varibles';
 
+@use 'main/animations';
 @use 'main/basic';
 @use 'main/links';
 @use 'main/typo';
-@use 'main/animations';
+@use 'main/navigation';
 
-// 🛠️🛠️🛠️ @DEV hellpers 🛠️🛠️🛠️
+// // 🛠️🛠️🛠️ @DEV hellpers 🛠️🛠️🛠️
 // *,
 // *::before,
 // *::after {
-//   outline: 1px dashed lime;
-//   // background-color: hsl(0 100% 50% / 0.1);
+//   // outline: 1px dashed fuchsia;
+//   background-color: rgba(0, 200, 200, 0.2);
 // }
-// 🛠️🛠️🛠️ @DEV helpers end. 🛠️🛠️🛠️
+// // 🛠️🛠️🛠️ @DEV helpers end. 🛠️🛠️🛠️
+
+.just.like.btn {
+  // for header which is switched with link
+  margin-block: 0;
+
+  cursor: default;
+  &:hover {
+    color: initial;
+  }
+}
+
+main {
+  padding-top: 3rem;
+}

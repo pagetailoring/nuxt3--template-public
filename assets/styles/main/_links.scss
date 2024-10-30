@@ -10,6 +10,11 @@ a {
 
   text-decoration: none;
   color: var(--text);
+  transition: color var(--time) var(--ease);
+
+  &:hover {
+    color: var(--action);
+  }
 
   &,
   & > * {
