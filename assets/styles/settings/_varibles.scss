@@ -1,0 +1,17 @@
+:root {
+  // default ease/transition time
+  --time: 0.3s;
+  // default ease
+  --ease: ease-in-out 0.1s;
+}
+
+:root {
+  --stroke: 1px;
+
+  // margin
+  --m: 1rem;
+
+  @media (min-width: 461px) {
+    --m: 2rem;
+  }
+}

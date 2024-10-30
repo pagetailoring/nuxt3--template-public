@@ -1,0 +1,12 @@
+:root {
+  --one: #222222;
+  --two: #f1ede9;
+  --three: #c31231;
+  --four: #414141;
+}
+
+:root {
+  --text: var(--one);
+  --bg: var(--two);
+  --action: var(--three);
+}

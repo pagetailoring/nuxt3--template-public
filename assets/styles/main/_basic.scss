@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // margin: 0;
+  // padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background-color: var(--two);
+  color: var(--one);
+}
+
+.fix {
+  position: fixed;
+}
+
+.f {
+  display: flex;
+}
+
+.abs {
+  position: absolute;
+}
+
+.center {
+  @extend .f;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+main,
+footer {
+  margin-inline: var(--m);
+}
+
+main {
+  display: grid;
+  place-content: center;
+}

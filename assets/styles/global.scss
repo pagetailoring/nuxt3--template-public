@@ -1,0 +1,16 @@
+@use 'settings/colors';
+@use 'settings/varibles';
+
+@use 'main/basic';
+@use 'main/links';
+@use 'main/typo';
+@use 'main/animations';
+
+// 🛠️🛠️🛠️ @DEV hellpers 🛠️🛠️🛠️
+// *,
+// *::before,
+// *::after {
+//   outline: 1px dashed lime;
+//   // background-color: hsl(0 100% 50% / 0.1);
+// }
+// 🛠️🛠️🛠️ @DEV helpers end. 🛠️🛠️🛠️

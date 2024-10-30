@@ -1,0 +1,27 @@
+@use 'basic';
+
+.btn,
+button,
+a {
+  background: transparent;
+  border: none;
+  border-image: none;
+  font: unset;
+
+  text-decoration: none;
+  color: var(--text);
+
+  &,
+  & > * {
+    cursor: pointer;
+  }
+}
+
+.btn {
+  @extend .center;
+  @extend .col;
+}
+
+.router-link-active {
+  color: var(--action);
+}
