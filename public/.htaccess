@@ -1,0 +1,13 @@
+
+# for OVH hosting - cache controle & redirect for https
+<FilesMatch "\.(js|svg|css)$">
+    Header set Cache-Control "max-age=31536000"
+</FilesMatch>
+
+<FilesMatch "\.(webp|jpg|jpeg|png)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
