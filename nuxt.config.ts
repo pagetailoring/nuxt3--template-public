@@ -9,7 +9,11 @@ export default defineNuxtConfig({
     '@nuxtjs/html-validator',
     'nuxt-payload-analyzer',
     'nuxt-capo',
+
+    // https://nuxt.com/modules/sitemap
     '@nuxtjs/sitemap',
+    // https://nuxt.com/modules/robots
+    '@nuxtjs/robots',
 
     // https://nuxt.com/modules/vueuse
     // https://vueuse.org/functions.html
@@ -37,8 +41,8 @@ export default defineNuxtConfig({
 
     // https://nuxt.com/docs/api/nuxt-config#head
     head: {
-      htmlAttrs: { lang: 'pl' },
-      title: process.env.BRAND,
+      htmlAttrs: { lang: 'en' },
+      title: process.env.TITLE,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width,initial-scale=1' },

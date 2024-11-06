@@ -11,7 +11,8 @@ onMounted(() => {
   <main>
     <h1>contact</h1>
     <p>
-      <NuxtLink class="btn" :to="`mailto:${mail}`">{{ mail }}</NuxtLink>
+      <NuxtLink class="btn" :to="`mailto:${mail}`">M: {{ mail }}</NuxtLink>
     </p>
+    <UiAuthor />
   </main>
 </template>

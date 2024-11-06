@@ -2,7 +2,7 @@
   --one: #222222;
   --two: #f1ede9;
   --three: #c31231;
-  --four: #414141;
+  --four: #f693a5;
 }
 
 :root {
@@ -20,6 +20,6 @@ body[color-scheme='light'],
   :root {
     --bg: var(--one);
     --text: var(--two);
-    --action: var(--three);
+    --action: var(--four);
   }
 }

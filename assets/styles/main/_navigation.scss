@@ -12,6 +12,7 @@ nav {
   border-bottom: var(--stroke) var(--text) solid;
 
   justify-content: flex-end;
+  align-items: center;
 
   --space: calc(var(--m) / 2);
   padding-inline: var(--space);
@@ -22,6 +23,12 @@ nav {
     &:first-child {
       margin-right: auto;
     }
+  }
+
+  h1.like.btn,
+  .home.btn {
+    text-align: left;
+    max-width: 18em;
   }
 }
 

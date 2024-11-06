@@ -15,6 +15,8 @@
 </template>
 
 <script lang="ts" setup>
+const isWaiting = useLazyLoadComponents()
+
 const config = useRuntimeConfig()
 const { TITLE } = config.public
 
@@ -22,6 +24,4 @@ const route = useRoute()
 const isHomePage = computed(() => {
   return route.fullPath === '/'
 })
-
-const isWaiting = useLazyLoadComponents()
 </script>

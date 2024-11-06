@@ -10,7 +10,7 @@ const isDark = useDark({
 </script>
 
 <template>
-  <button class="btn mode" type="button" aria-lable="toggle color mode" @click="isDark = !isDark">
+  <button class="btn mode" type="button" aria-label="toggle color mode" @click="isDark = !isDark">
     <svg viewBox="0 0 500 510">
       <path
         fill="currentColor"
