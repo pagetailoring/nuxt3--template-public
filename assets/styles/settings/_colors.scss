@@ -6,7 +6,20 @@
 }
 
 :root {
+  color-scheme: dark light;
+}
+
+body[color-scheme='light'],
+:root {
   --text: var(--one);
   --bg: var(--two);
   --action: var(--three);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--one);
+    --text: var(--two);
+    --action: var(--three);
+  }
 }

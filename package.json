@@ -1,7 +1,7 @@
 {
   "name": "nuxt3--template",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "build": "nuxi build --dotenv .env",
@@ -16,7 +16,9 @@
     "upgrade": "nuxi upgrade"
   },
   "dependencies": {
-    "nuxt": "^3.13.2",
+    "@vueuse/core": "^11.2.0",
+    "@vueuse/nuxt": "^11.2.0",
+    "nuxt": "^3.14.159",
     "vue": "latest",
     "vue-router": "latest"
   },

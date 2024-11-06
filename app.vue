@@ -1,9 +1,8 @@
 <template>
   <div id="__page">
     <nav>
-      <h1 class="just like btn" v-if="isHomePage">{{ TITLE }}</h1>
+      <h1 v-if="isHomePage" class="just like btn">{{ TITLE }}</h1>
       <NuxtLink v-else class="home btn" to="/">{{ TITLE }}</NuxtLink>
-
       <LazyTheNavigationList v-if="!isWaiting" />
     </nav>
 

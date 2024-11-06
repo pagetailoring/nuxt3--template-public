@@ -9,7 +9,11 @@ export default defineNuxtConfig({
     '@nuxtjs/html-validator',
     'nuxt-payload-analyzer',
     'nuxt-capo',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+
+    // https://nuxt.com/modules/vueuse
+    // https://vueuse.org/functions.html
+    '@vueuse/nuxt'
   ],
 
   // https://nuxt.com/modules/sitemap
@@ -38,6 +42,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width,initial-scale=1' },
+        { name: 'color-scheme', content: 'dark light' },
         { name: 'description', content: process.env.DESCRIPTION }
       ],
       link: [{ rel: 'canonical', href: process.env.DOMAIN }]
