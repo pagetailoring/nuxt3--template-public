@@ -9,15 +9,19 @@ onMounted(() => {
   <main>
     <h2>FEATURES</h2>
     <ul>
-      <li>minimal styling ~2kb (sass & modern CSS)</li>
-      <li>dark / light mode (auto detection & toggle button in navigation)</li>
-      <li>auto generated navigation</li>
+      <li>auto generated navigation from page list in router</li>
+      <li>color mode</li>
+      <ul>
+        <li>auto detection</li>
+        <li>toggle button</li>
+        <li>key shortcut (shift + C)</li>
+      </ul>
       <li>error handling</li>
       <li>accesibility</li>
-      <li>button hovers & page transitions</li>
-      <li>lazy loading components (useful to delay loading heavy dependencies)</li>
       <li>SEO & development tools</li>
+      <li>lazy loading components (useful to delay loading heavy dependencies)</li>
+      <li>minimal styling ~2kb (SCSS & modern CSS)</li>
+      <li>button hovers & page transitions</li>
     </ul>
-    <p style="text-align: center">My way for start with nuxt new page</p>
   </main>
 </template>

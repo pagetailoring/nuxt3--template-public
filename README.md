@@ -1,10 +1,8 @@
-# Nuxt 3 Start Template by Page Tailoring
+# Nuxt 3 Start Template
 
-In my way.
-
-- Author [Page Tailoring](https://pagetailoring.com)
 - Demo preview page [template.pagetailoring.com](https://template.pagetailoring.com/)
 - [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- Author [Page Tailoring](https://pagetailoring.com)
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
@@ -24,15 +22,16 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - @nuxtjs/robots
 - @nuxtjs/sitemap
 
-### from Page Tailoring
+### FEATURES
 
-- minimal styling (with sass & modern CSS (2158b))
-- dark / light mode (auto detection & toggle button in navigation)
-- auto generated navigation
+- auto generated navigation from page list in router
+- color mode (auto detection, toggle button & key shortcut)
 - error handling
 - accesibility
+- SEO & development tools
+- lazy loading components (useful to delay loading heavy dependencies)
 - button hovers & page transitions
-- lazy loading components (useful to delay loading heavy dependencies like GSAP)
+- minimal styling ~2kb (SCSS & modern CSS)
 
 DOMAIN adress, meta: TITLE & DESCRIPTION in .env settings file
 

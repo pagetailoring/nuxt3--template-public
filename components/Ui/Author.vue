@@ -2,7 +2,7 @@
   <div class="author">
     <NuxtLink class="btn" to="https://pagetailoring.com/">
       <p>
-        <small>visit websites:</small>
+        <small>websites</small>
       </p>
       <svg viewBox="0 0 797 297">
         <path
