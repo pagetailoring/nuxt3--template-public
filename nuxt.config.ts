@@ -44,7 +44,7 @@ export default defineNuxtConfig({
 
     // https://nuxt.com/docs/api/nuxt-config#head
     head: {
-      htmlAttrs: { lang: 'en' },
+      htmlAttrs: { lang: 'en', class: 'dark' },
       title: process.env.TITLE,
       meta: [
         { charset: 'utf-8' },

@@ -3,23 +3,18 @@
   --two: #f1ede9;
   --three: #c31231;
   --four: #f693a5;
-}
 
-:root {
   color-scheme: dark light;
 }
 
-body[color-scheme='light'],
-:root {
+html:not(.dark) {
   --text: var(--one);
   --bg: var(--two);
   --action: var(--three);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: var(--one);
-    --text: var(--two);
-    --action: var(--four);
-  }
+html.dark {
+  --bg: var(--one);
+  --text: var(--two);
+  --action: var(--four);
 }
