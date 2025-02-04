@@ -4,21 +4,24 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ['~/assets/styles/global.scss'],
 
-  modules: [
-    '@nuxt/eslint',
-    '@nuxtjs/html-validator',
-    'nuxt-payload-analyzer',
-    'nuxt-capo',
+  modules:
+    process.env.NODE_ENV === 'development'
+      ? ['@nuxt/eslint', '@nuxtjs/html-validator', 'nuxt-payload-analyzer', '@vueuse/nuxt']
+      : [
+          '@nuxt/eslint',
+          '@nuxtjs/html-validator',
+          'nuxt-payload-analyzer',
+          '@vueuse/nuxt',
 
-    // https://nuxt.com/modules/sitemap
-    '@nuxtjs/sitemap',
-    // https://nuxt.com/modules/robots
-    '@nuxtjs/robots',
-
-    // https://nuxt.com/modules/vueuse
-    // https://vueuse.org/functions.html
-    '@vueuse/nuxt'
-  ],
+          'nuxt-capo',
+          '@nuxtjs/sitemap',
+          '@nuxtjs/robots'
+        ],
+  // https://nuxt.com/modules/robots
+  // https://nuxt.com/modules/sitemap
+  // https://nuxt.com/modules/vueuse
+  // https://vueuse.org/functions.html
+  // https://nuxtseo.com/docs/nuxt-seo/getting-started/introduction
 
   // https://nuxt.com/modules/sitemap
   // https://nuxtseo.com/sitemap/getting-started/installation
