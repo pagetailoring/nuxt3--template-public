@@ -10,8 +10,9 @@ a {
 
   text-decoration: none;
   color: var(--text);
-  transition: color var(--time) var(--ease);
+  transition: color var(--anim);
 
+  &:focus-visible,
   &:hover {
     color: var(--action);
   }
@@ -20,6 +21,13 @@ a {
   & > * {
     cursor: pointer;
   }
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: small;
+
+  letter-spacing: 0.15em;
 }
 
 .btn {

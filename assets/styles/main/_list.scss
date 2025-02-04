@@ -1,0 +1,17 @@
+@use 'basic';
+
+ul {
+  // to better center on mobile
+  padding-inline: 2em;
+
+  &.lib {
+    @extend .center;
+    // display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+
+    li {
+      margin-inline: 0.8em;
+    }
+  }
+}

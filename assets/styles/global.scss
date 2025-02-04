@@ -6,6 +6,7 @@
 @use 'main/image';
 @use 'main/links';
 @use 'main/typo';
+@use 'main/list';
 @use 'main/navigation';
 
 @use 'components/color-mode-button';
@@ -14,21 +15,21 @@
 // *,
 // *::before,
 // *::after {
-//   // outline: 1px dashed fuchsia;
-//   background-color: rgba(0, 200, 200, 0.2);
+//   outline: 1px dashed fuchsia;
+//   background-color: rgba(0, 200, 200, 0.1);
 // }
 // // 🛠️🛠️🛠️ @DEV helpers end. 🛠️🛠️🛠️
 
 .just.like.btn {
   // for header which is switched with link
   margin-block: 0;
-
   cursor: default;
+
   &:hover {
-    color: initial;
+    color: var(--action);
   }
 }
 
 main {
-  padding-top: 3rem;
+  padding-top: 5rem;
 }

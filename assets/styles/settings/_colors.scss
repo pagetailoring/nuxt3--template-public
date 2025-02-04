@@ -1,20 +1,22 @@
 :root {
-  --one: #222222;
-  --two: #f1ede9;
+  --one: #222;
+  --two: #ddd4cb;
   --three: #c31231;
   --four: #f693a5;
-
-  color-scheme: dark light;
 }
 
 html:not(.dark) {
   --text: var(--one);
   --bg: var(--two);
   --action: var(--three);
+  --vivid: #000;
+  color-scheme: light;
 }
 
 html.dark {
   --bg: var(--one);
   --text: var(--two);
   --action: var(--four);
+  --vivid: #fff;
+  color-scheme: dark;
 }

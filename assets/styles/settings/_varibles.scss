@@ -3,6 +3,8 @@
   --time: 0.4s;
   // default ease
   --ease: ease-in-out 0.1s;
+  // shorthand
+  --anim: var(--time) var(--ease);
 
   // for lines & borders
   --stroke: 1px;

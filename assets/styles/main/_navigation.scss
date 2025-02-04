@@ -9,7 +9,7 @@ nav {
   left: 0;
 
   background-color: var(--bg);
-  border-bottom: var(--stroke) var(--text) solid;
+  border-bottom: var(--stroke) solid var(--text);
 
   justify-content: flex-end;
   align-items: center;
@@ -29,12 +29,9 @@ nav {
   .home.btn {
     text-align: left;
     max-width: 18em;
-  }
-}
 
-.btn {
-  text-transform: uppercase;
-  font-size: small;
-  font-weight: 400;
-  letter-spacing: 0.07em;
+    @media (max-width: 420px) {
+      max-width: 13em;
+    }
+  }
 }

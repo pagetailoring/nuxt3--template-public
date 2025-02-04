@@ -1,8 +1,8 @@
 body,
 html {
   font-weight: 100;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
   font-family: Helvetica, Arial, sans-serif;
 
   font-size: 100%;
@@ -12,6 +12,7 @@ h1,
 h2,
 h3 {
   font-weight: 100;
+  line-height: 1.2;
 }
 
 h3,
@@ -29,6 +30,10 @@ main {
 li,
 p {
   text-wrap: pretty;
+}
+
+p {
+  text-align: center;
 }
 
 footer {
