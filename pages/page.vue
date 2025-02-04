@@ -10,7 +10,7 @@ onMounted(() => {
     <h1>more info</h1>
 
     <ul>
-      <li>nuxt version 3.14</li>
+      <li>nuxt version 3.15.4</li>
     </ul>
 
     <h2>development dependencies for optimization & coding helpers</h2>
