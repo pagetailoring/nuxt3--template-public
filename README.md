@@ -39,30 +39,35 @@ DOMAIN adress, meta: TITLE & DESCRIPTION in .env settings file
 
 Start the development server on [http://localhost:3000](http://localhost:3000)
 
+with bun
+
 ```bash
-# bun
 bun i
 bun dev
 ```
 
-or
+or for preview in local network
 
 ```bash
 bun host
 ```
 
-For preview in local network
-
 ## Additional handy commands
 
+Upgrades Nuxt and dependencies to the latest versions.
+
 ```bash
-# upgrades Nuxt & dependencies to the latest version
 bun up
+```
 
-# analyze the production bundle or your Nuxt application & server preview on local server http://localhost:3000
+Analyze the production bundle or your Nuxt application & server preview on local server [http://localhost:3000](http://localhost:3000)
+
+```bash
 bun analyze
+```
 
-# remove common generated Nuxt files and caches. Useful before archiving a project
+Removes common generated Nuxt files, caches, and the node_modules folder with library dependency files. Useful before archiving a project.
+
+```bash
 bun clean
-
 ```
