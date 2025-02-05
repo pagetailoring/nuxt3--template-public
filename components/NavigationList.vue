@@ -7,5 +7,4 @@ const list = getRoutes()
   <template v-for="{ path, name } in list">
     <UiLink v-if="path !== '/'" :key="name" :to="path">{{ name }}</UiLink>
   </template>
-  <LazyTheColorModeButton />
 </template>

@@ -1,0 +1,4 @@
+<template>
+  <LazyNavigationList />
+  <LazyTheColorModeButton />
+</template>
