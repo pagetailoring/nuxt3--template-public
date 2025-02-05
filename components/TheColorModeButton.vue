@@ -9,7 +9,7 @@ onKeyStroke(({ code }) => {
 })
 
 onMounted(() => {
-  console.log('\n%ckey shortcuts:\n\nshift + C%c to toggle COLOR MODE', 'font-size:125%;', 'font-size:100%;')
+  console.log('%ckey shortcuts:\n\nshift + C%c to toggle COLOR MODE', 'font-size:125%;', 'font-size:100%;')
 })
 </script>
 
