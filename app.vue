@@ -16,8 +16,8 @@
 const config = useRuntimeConfig()
 const { TITLE } = config.public
 
-const { fullPath } = useRoute()
+const route = useRoute()
 const isHomePage = computed(() => {
-  return fullPath === '/'
+  return route.fullPath === '/'
 })
 </script>
