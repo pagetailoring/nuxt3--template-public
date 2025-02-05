@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "nuxi build --dotenv .env.template",
-    "dev": "nuxi dev --dotenv .env.local --port 7082",
-    "host": "nuxi dev --dotenv .env.local --port 7082 --host",
+    "dev": "nuxi dev --dotenv .env.local",
+    "host": "nuxi dev --dotenv .env.local --host",
     "generate": "nuxi generate --dotenv .env.template",
     "demo": "nuxi generate --dotenv .env.template && scp -rp -P 41556 .output/public/. kvzbeoc@sshcloud.cluster024.hosting.ovh.net:~/_template--demo-site",
     "development": "nuxi generate --dotenv .env.development && scp -rp -P 41556 .output/public/. kvzbeoc@sshcloud.cluster024.hosting.ovh.net:~/_dev",

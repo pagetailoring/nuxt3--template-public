@@ -37,7 +37,7 @@ DOMAIN adress, meta: TITLE & DESCRIPTION in .env settings file
 
 ## Development
 
-Start the development server on `http://localhost:7082`:
+Start the development server on [http://localhost:3000](http://localhost:3000)
 
 ```bash
 # bun
