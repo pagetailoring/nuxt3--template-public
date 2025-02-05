@@ -6,9 +6,7 @@ ul {
 
   &.lib {
     @extend .center;
-    // display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
 
     li {
       margin-inline: 0.8em;

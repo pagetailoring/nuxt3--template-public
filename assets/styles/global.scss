@@ -10,6 +10,7 @@
 @use 'main/navigation';
 
 @use 'components/color-mode-button';
+@use 'components/github-button';
 
 // // 🛠️🛠️🛠️ @DEV hellpers 🛠️🛠️🛠️
 // *,
@@ -32,4 +33,6 @@
 
 main {
   padding-top: 5rem;
+  display: grid;
+  justify-content: center;
 }

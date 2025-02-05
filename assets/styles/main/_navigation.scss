@@ -9,12 +9,11 @@ nav {
   left: 0;
 
   background-color: var(--bg);
-  border-bottom: var(--stroke) solid var(--text);
+  border-bottom: var(--stroke) solid currentColor;
 
-  justify-content: flex-end;
   align-items: center;
 
-  --space: calc(var(--m) / 2);
+  --space: calc(var(--m) / 3);
   padding-inline: var(--space);
 
   .btn {

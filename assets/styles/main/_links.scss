@@ -33,6 +33,9 @@ a {
 .btn {
   @extend .center;
   @extend .col;
+
+  width: var(--size);
+  height: var(--size);
 }
 
 .router-link-active {
