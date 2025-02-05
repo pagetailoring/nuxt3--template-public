@@ -5,7 +5,7 @@ const list = getRoutes()
 
 <template>
   <template v-for="{ path, name } in list">
-    <NuxtLink v-if="path !== '/'" :key="name" class="btn" :to="path">{{ name }}</NuxtLink>
+    <UiLink v-if="path !== '/'" :key="name" :to="path">{{ name }}</UiLink>
   </template>
-  <UiColorModeButton />
+  <LazyTheColorModeButton />
 </template>

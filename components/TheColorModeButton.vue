@@ -14,14 +14,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <button class="btn mode" type="button" aria-label="toggle color mode" @click="triggerMode">
+  <UiButton class="mode" aria-label="toggle color mode" @click="triggerMode">
     <svg viewBox="0 0 500 510">
       <path
         fill="currentColor"
         d="M0 246a248 248 0 1 0 496 0 248 248 0 0 0-496 0Zm248 184V62a184 184 0 0 1 0 368Z"
       />
     </svg>
-  </button>
+  </UiButton>
 </template>
 
 <!-- <style lang="scss">
