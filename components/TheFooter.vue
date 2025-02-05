@@ -1,3 +1,5 @@
 <template>
-  <footer>My start template for nuxt 3 projects</footer>
+  <footer>
+    <p>My start template for nuxt 3 projects</p>
+  </footer>
 </template>

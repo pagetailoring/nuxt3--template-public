@@ -25,13 +25,14 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ### FEATURES
 
 - auto generated navigation from page list in router
-- color mode (auto detection, toggle button & key shortcut)
 - error handling
 - accesibility
-- SEO & development tools
-- lazy loading components (useful to delay loading heavy dependencies)
-- button hovers & page transitions
+- performance optimization tools
+- validation tools
+- basic SEO
+- color mode (auto detection, toggle button & key shortcut)
 - minimal styling ~2kb (SCSS & modern CSS)
+- button hovers & page transitions
 
 DOMAIN adress, meta: TITLE & DESCRIPTION in .env settings file
 
