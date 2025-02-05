@@ -9,6 +9,6 @@ onMounted(() => {
   <main>
     <ContentMailContact />
     <LazyContentLookingForWork />
-    <UiAuthor />
+    <LazyContentAuthorLinkWithLogo />
   </main>
 </template>
