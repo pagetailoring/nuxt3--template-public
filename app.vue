@@ -8,9 +8,7 @@
 
     <NuxtPage class="main" />
 
-    <Transition>
-      <LazyTheFooter v-if="!isWaiting" />
-    </Transition>
+    <LazyTheFooter />
   </div>
 </template>
 
@@ -20,8 +18,8 @@ const isWaiting = useLazyLoadComponents()
 const config = useRuntimeConfig()
 const { TITLE } = config.public
 
-const route = useRoute()
+const { fullPath } = useRoute()
 const isHomePage = computed(() => {
-  return route.fullPath === '/'
+  return fullPath === '/'
 })
 </script>

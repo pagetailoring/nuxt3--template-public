@@ -1,7 +1,3 @@
 <template>
-  <footer>
-    <p>
-      <span>My start template for nuxt 3 projects</span>
-    </p>
-  </footer>
+  <footer>My start template for nuxt 3 projects</footer>
 </template>
