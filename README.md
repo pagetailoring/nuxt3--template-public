@@ -40,7 +40,7 @@ DOMAIN adress, meta: TITLE & DESCRIPTION in .env settings file
 
 Start the development server on [http://localhost:3000](http://localhost:3000)
 
-with bun
+with [bun](https://bun.sh/)
 
 ```bash
 bun i
