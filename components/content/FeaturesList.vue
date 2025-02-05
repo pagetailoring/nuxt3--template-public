@@ -2,12 +2,14 @@
   <h2>features</h2>
   <ul>
     <li>auto generated navigation from page list in router</li>
-    <li>color mode</li>
-    <ul>
-      <li>auto detection</li>
-      <li>toggle button</li>
-      <li>key shortcut (shift + C)</li>
-    </ul>
+    <li>
+      color mode
+      <ul>
+        <li>auto detection</li>
+        <li>toggle button</li>
+        <li>key shortcut (shift + C)</li>
+      </ul>
+    </li>
     <li>error handling</li>
     <li>accesibility</li>
     <li>SEO & development tools</li>
