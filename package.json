@@ -1,7 +1,7 @@
 {
   "name": "nuxt3--template",
   "private": false,
-  "version": "0.1.14",
+  "version": "0.1.15",
   "type": "module",
   "scripts": {
     "build": "nuxi build --dotenv .env.template",
@@ -22,9 +22,9 @@
   "dependencies": {
     "@nuxtjs/robots": "^5.2.2",
     "@nuxtjs/sitemap": "^7.2.4",
-    "@vueuse/core": "^v12.5.0",
-    "@vueuse/nuxt": "^v12.5.0",
-    "nuxt": "^3.15.4",
+    "@vueuse/core": "^v13.0.0",
+    "@vueuse/nuxt": "^v13.0.0",
+    "nuxt": "^3.16.0",
     "vue": "latest",
     "vue-router": "latest"
   },
