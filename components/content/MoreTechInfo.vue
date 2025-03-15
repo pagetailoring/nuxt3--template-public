@@ -3,7 +3,7 @@
   <p>optimization, validation & seo</p>
 
   <ul class="lib">
-    <li>nuxt version 3.15.4</li>
+    <li>nuxt version 3.16.0</li>
 
     <li>eslint</li>
     <li>prettier</li>
@@ -14,5 +14,6 @@
 
     <li>@nuxtjs/robots</li>
     <li>@nuxtjs/sitemap</li>
+    <li>@nuxt/fonts</li>
   </ul>
 </template>
