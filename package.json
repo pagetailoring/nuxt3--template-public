@@ -1,7 +1,7 @@
 {
   "name": "nuxt3--template",
   "private": false,
-  "version": "0.1.15",
+  "version": "0.1.16",
   "type": "module",
   "scripts": {
     "build": "nuxi build --dotenv .env.template",
@@ -20,6 +20,7 @@
     "upgrade": "nuxi upgrade"
   },
   "dependencies": {
+    "@nuxt/fonts": "0.11.0",
     "@nuxtjs/robots": "^5.2.2",
     "@nuxtjs/sitemap": "^7.2.4",
     "@vueuse/core": "^v13.0.0",
