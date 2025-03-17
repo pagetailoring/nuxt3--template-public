@@ -1,0 +1,38 @@
+@use 'basic';
+@use 'size';
+@use 'typo';
+
+nav {
+  @extend .f;
+  @extend .fix;
+  @extend .w100;
+  @extend .xy0;
+
+  background-color: var(--bg);
+  border-bottom: var(--stroke) solid var(--soft);
+
+  align-items: center;
+  padding-inline: var(--min);
+
+  & > .like,
+  .btn {
+    padding: 0.6em var(--min);
+    @extend .up;
+    font-size: 0.9rem;
+
+    &:first-child {
+      margin-inline: 0 auto;
+    }
+  }
+
+  h1.like,
+  .home.btn {
+    text-align: left;
+  }
+}
+
+.just.like {
+  // for header which is switched with link
+  margin-block: 0;
+  cursor: default;
+}

@@ -1,0 +1,13 @@
+@use 'basic';
+@use 'size';
+
+// img,
+svg {
+  // responsive
+  @extend .w100;
+  height: auto;
+}
+
+svg {
+  overflow: visible;
+}

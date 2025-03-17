@@ -1,0 +1,15 @@
+@use 'basic';
+@use 'size';
+
+main {
+  padding-block: 4rem 2rem;
+
+  align-content: center;
+  justify-items: start;
+}
+
+footer,
+main {
+  @extend .g;
+  @extend .w100;
+}

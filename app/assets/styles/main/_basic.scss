@@ -1,0 +1,43 @@
+@use 'position';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+#__page,
+#__nuxt {
+  overflow-x: hidden;
+}
+
+.f {
+  display: inline-flex;
+}
+
+.g {
+  display: grid;
+}
+
+main {
+  min-height: 100dvh;
+}
+
+main,
+footer {
+  padding-inline: var(--mi);
+}
+
+footer {
+  margin-top: var(--mb);
+  align-self: end;
+}

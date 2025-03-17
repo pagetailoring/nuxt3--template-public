@@ -1,0 +1,25 @@
+@use 'basic';
+
+ul {
+  @extend .f;
+  flex-wrap: wrap;
+  list-style-position: outside;
+  margin-inline: 0.5em 0;
+}
+
+li,
+ul {
+  padding-inline: 0;
+}
+
+li {
+  margin-inline: 0.7em;
+
+  &:has(ul) {
+    margin-right: 0;
+  }
+
+  &::marker {
+    color: var(--soft);
+  }
+}

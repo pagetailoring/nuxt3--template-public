@@ -1,0 +1,38 @@
+body,
+html {
+  font-weight: var(--text-weight);
+}
+
+.btn,
+h3,
+h2,
+h1 {
+  text-wrap: balance;
+}
+
+ul,
+li,
+p {
+  text-wrap: pretty;
+  max-width: 40em;
+}
+
+// b {
+//   font-weight: var(--bold);
+//   letter-spacing: 0.06em;
+// }
+
+s {
+  text-decoration-color: var(--soft);
+}
+
+.up {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+p,
+h2,
+h1 {
+  margin-inline: var(--mi);
+}

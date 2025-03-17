@@ -16,23 +16,28 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - nuxt-payload-analyzer
 - typescript with vue-tsc
 - nuxt-capo
+- @vueuse/nuxt
+- @nuxt/fonts (option)
 
 ### basic SEO tools
 
 - @nuxtjs/robots
-- @nuxtjs/sitemap
+- @nuxtjs/sitemap (with configuration)
 
 ### FEATURES
 
 - auto generated navigation from page list in router
+- mobile menu with <dialog>
 - error handling
 - accesibility
-- performance optimization tools
+- performance tools
 - validation tools
 - basic SEO
 - color mode (auto detection, toggle button & key shortcut)
-- minimal styling ~2kb (SCSS & modern CSS)
-- button hovers & page transitions
+- page transitions
+- SCSS & modern CSS
+- minimal styling ~3kb
+- fonts preload
 
 DOMAIN adress, meta: TITLE & DESCRIPTION in .env settings file
 

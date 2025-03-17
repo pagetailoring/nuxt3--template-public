@@ -1,0 +1,31 @@
+:root {
+  --text-weight: 300;
+  --header-weight: 800;
+  // --bold: 500; // unused
+}
+
+body,
+html {
+  font-family: 'Syne', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  font-size: 111%;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+
+// p { font-family: 'Space Grotesk', sans-serif;} // 300-700
+// p { font-family: "Hanken Grotesk", sans-serif;} // 100-900
+
+.btn.trigger,
+.home.btn,
+h1,
+h2,
+h3 {
+  font-weight: var(--header-weight);
+}

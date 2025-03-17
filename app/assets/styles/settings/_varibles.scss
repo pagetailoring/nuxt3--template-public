@@ -1,0 +1,23 @@
+:root {
+  // default ease/transition time
+  --time: 0.6s;
+
+  // default ease
+  --ease: ease;
+  --ease-in: cubic-bezier(0.32, 0, 0.67, 0); // easeInCubic
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1); // easeOutCubic
+
+  // shorthand with delay
+  --anim: var(--time) var(--ease) 0.1s;
+
+  // for lines & borders
+  --stroke: 1px;
+
+  // helpper
+  --min: 0.5rem;
+
+  // default margin inline
+  --mi: 1rem;
+  // default margin block
+  --mb: var(--min);
+}

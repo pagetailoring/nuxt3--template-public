@@ -10,12 +10,16 @@ dist
 
 # temp
 temp.vue
+app/components/dev/
+*__dev*
+
+# images
+works
+works-no-shadow
+_ipx
 
 # Node dependencies
 node_modules
-
-# development helpers
-*__dev*
 
 # Logs
 logs
@@ -30,8 +34,5 @@ logs
 .env
 .env.*
 !.env.example
-
-# images
-works
-works-no-shadow
-_ipx
+!.env.template
+!.env.local

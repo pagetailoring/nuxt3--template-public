@@ -1,0 +1,101 @@
+dialog {
+  --display: grid;
+  justify-content: center;
+  align-content: center;
+
+  border-color: var(--bg);
+  background-color: var(--bg);
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+  max-width: unset;
+  max-height: unset;
+
+  .home.btn,
+  .just.like,
+  .btn {
+    width: 100%;
+    text-align: center;
+    font-weight: var(--header-weight);
+    margin-inline: 0;
+  }
+
+  --space: var(--md);
+
+  .home.btn,
+  .just.like {
+    color: var(--soft);
+    margin-bottom: var(--space);
+
+    font-size: var(--lg);
+  }
+
+  .btn {
+    font-size: var(--md);
+
+    &:last-child {
+      margin-top: var(--space);
+      color: var(--soft);
+    }
+  }
+
+  // ⭐️ The open <dialog> must be styled using a pseudo-element :modal,
+  // not dialog[open] or dialog:open, as MDN suggests, (16.03.2025)
+  // because in the theoretically correct way, it doesn't work in Safari and Opera.
+  // There are still differences in implementing the <dialog> HTML native element in different browsers.
+  &:modal {
+    display: var(--display);
+  }
+}
+
+/* Animations */
+// not working on safari & opera, on firefox so-so
+
+// @TODO
+
+// dialog {
+//   transition-behavior: allow-discrete;
+
+//   animation: closing var(--time) var(--ease-in);
+
+//   &:open {
+//     animation: opening var(--time) var(--ease-out);
+//   }
+//   &:open::backdrop {
+//     animation: backdrop-fade-in var(--time) var(--ease-out) forwards;
+//   }
+// }
+
+// @keyframes opening {
+//   0% {
+//     transform: translateY(100vh);
+//     display: none;
+//   }
+//   100% {
+//     transform: translateY(0vh);
+//     display: var(--display);
+//   }
+// }
+
+// @keyframes closing {
+//   0% {
+//     transform: translateY(0vh);
+//     display: var(--display);
+//   }
+
+//   100% {
+//     transform: translateY(100vh);
+//     display: none;
+//   }
+// }
+
+// @keyframes backdrop-fade-in {
+//   0% {
+//     background-color: rgb(0 0 0 / 0%);
+//   }
+
+//   100% {
+//     background-color: rgb(0 0 0 / 25%);
+//   }
+// }

@@ -1,0 +1,28 @@
+.v-enter-active,
+.v-leave-active,
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity, filter;
+  transition-duration: var(--time);
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition-timing-function: ease;
+}
+
+.page-leave-active {
+  transition-timing-function: var(--ease-in);
+}
+
+.page-enter-active {
+  transition-timing-function: var(--ease-out);
+}
+
+.v-enter-from,
+.v-leave-to,
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(0.1rem);
+}

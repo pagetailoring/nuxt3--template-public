@@ -1,0 +1,15 @@
+:root {
+  // 1.618 Golden Ratio
+
+  // --xxlg: 6.854rem;
+  // --xlg: 4.236rem;
+  --lg: 2.618rem;
+  --md: 1.618rem;
+  // --sm: 0.618rem;
+  // --xsm: 0.382rem;
+}
+
+main h1,
+h2 {
+  font-size: var(--lg);
+}

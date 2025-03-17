@@ -1,41 +1,65 @@
+function getNowDate() {
+  const now = new Date()
+  return now.toISOString().split('T')[0]
+}
+
+function getModules() {
+  const modules = [
+    '@nuxt/eslint',
+    '@nuxt/scripts',
+    '@vueuse/nuxt',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/html-validator'
+  ]
+  const noInDevModules = ['nuxt-payload-analyzer', 'nuxt-capo']
+
+  if (process.env.useNuxtFonts === 'true') modules.push('@nuxt/fonts')
+
+  return process.env.NODE_ENV === 'development' ? modules : modules.concat(noInDevModules)
+}
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  css: ['~/assets/styles/global.scss'],
 
-  modules:
-    process.env.NODE_ENV === 'development'
-      ? ['@nuxt/eslint', '@nuxtjs/html-validator', 'nuxt-payload-analyzer', '@vueuse/nuxt', '@nuxt/fonts']
-      : [
-          '@nuxt/eslint',
-          '@nuxtjs/html-validator',
-          'nuxt-payload-analyzer',
-          '@vueuse/nuxt',
-          '@nuxt/fonts',
+  css: ['~/assets/fonts/_syne.scss', '~/assets/styles/global.scss'],
+  future: { compatibilityVersion: 4 },
 
-          'nuxt-capo',
-          '@nuxtjs/sitemap',
-          '@nuxtjs/robots'
-        ],
-  // https://nuxt.com/modules/robots
-  // https://nuxt.com/modules/sitemap
-  // https://nuxt.com/modules/vueuse
-  // https://vueuse.org/functions.html
-  // https://nuxtseo.com/docs/nuxt-seo/getting-started/introduction
+  // https://nuxt.com/docs/getting-started/styling#preprocessor-workers-experimental
+  vite: {
+    css: {
+      preprocessorMaxWorkers: true // number of CPUs minus 1
+    }
+  },
 
-  // https://nuxt.com/modules/sitemap
-  // https://nuxtseo.com/sitemap/getting-started/installation
-  // for @nuxtjs/sitemap
+  modules: getModules(),
+
+  typescript: {
+    typeCheck: true
+  },
+
   site: {
+    name: process.env.TITLE,
     url: process.env.DOMAIN,
     trailingSlash: true
+  },
+
+  // https://nuxtseo.com/docs/sitemap/guides/loc-data
+  sitemap: {
+    urls: [
+      { loc: '/', priority: 0.9 },
+      { loc: '/contact', priority: 1 }
+    ],
+    // https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap#additional-notes-about-xml-sitemaps
+    defaults: { lastmod: getNowDate(), priority: 0.5, changefreq: 'weekly' }
   },
 
   // https://nuxt.com/docs/api/composables/use-runtime-config
   runtimeConfig: {
     public: {
-      TITLE: process.env.TITLE
+      TITLE: process.env.TITLE,
+      DOMAIN: process.env.DOMAIN
     }
   },
 
@@ -46,14 +70,11 @@ export default defineNuxtConfig({
     // https://nuxt.com/docs/api/nuxt-config#head
     head: {
       htmlAttrs: { lang: 'en', class: 'dark' },
-      title: process.env.TITLE,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width,initial-scale=1' },
-        { name: 'color-scheme', content: 'dark light' },
         { name: 'description', content: process.env.DESCRIPTION }
-      ],
-      link: [{ rel: 'canonical', href: process.env.DOMAIN }]
+      ]
     }
   }
 })

@@ -1,0 +1,14 @@
+@use 'settings/break-points' as rwd;
+
+nav {
+  @include rwd.mobile() {
+    & > .btn.auto {
+      display: none;
+    }
+  }
+  @include rwd.not-mobile() {
+    .btn.trigger {
+      display: none;
+    }
+  }
+}

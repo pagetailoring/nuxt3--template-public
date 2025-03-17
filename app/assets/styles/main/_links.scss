@@ -1,0 +1,33 @@
+@use 'basic';
+
+.btn,
+button,
+a {
+  background: transparent;
+  border: none;
+  border-image: none;
+  font: unset;
+
+  text-decoration: none;
+  color: var(--text);
+  transition: color var(--anim);
+
+  &:focus-visible,
+  &:hover {
+    color: var(--action);
+  }
+
+  &,
+  & > * {
+    cursor: pointer;
+  }
+}
+
+.btn {
+  width: var(--size);
+  height: var(--size);
+}
+
+.router-link-active {
+  color: var(--action);
+}

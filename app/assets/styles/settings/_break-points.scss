@@ -1,0 +1,35 @@
+// RWD break points
+$mobile: 29em; // 464px
+$tablet--sm: 48em; // 768px;
+// $tablet--md: 50em; // 800px x 600px
+// $tablet: 64em; // 1024px x 768px
+// $desktop--sm: 80em; // 1280px x 800px
+// $desktop: 84em; // 1344px x 840px
+// $desktop--md: 96em; // 1536px x 960px
+// $desktop--lg: 128em; // 2048px x 1280px
+// $desktop--xlg: 160em; // 2560px x 1140px
+// $desktop--xxlg: 180em; // special
+// 188em; // 3008px
+
+@mixin mobile() {
+  @media (max-width: ($mobile)) {
+    @content;
+  }
+}
+@mixin not-mobile() {
+  @media (min-width: ($mobile)) {
+    @content;
+  }
+}
+
+@mixin break($arg) {
+  @media (min-width: $arg) {
+    @content;
+  }
+}
+
+@mixin break-down($arg) {
+  @media (max-width: ($arg)) {
+    @content;
+  }
+}

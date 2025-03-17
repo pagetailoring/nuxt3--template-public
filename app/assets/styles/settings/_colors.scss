@@ -1,0 +1,22 @@
+:root {
+  --one: #222;
+  --two: #ddd4cb;
+  --three: #c31231;
+  --four: #f693a5;
+
+  --soft: #807b77; // mix of --one & --two 50/50
+}
+
+html:not(.dark) {
+  --text: var(--one);
+  --bg: var(--two);
+  --action: var(--three);
+  --vivid: #000;
+}
+
+html.dark {
+  --bg: var(--one);
+  --text: var(--two);
+  --action: var(--four);
+  --vivid: #fff;
+}
